@@ -15,7 +15,7 @@ def createVideo(reddit, driver, name, bgcount):
         if not submission.stickied and submission.is_self:
             print(submission.is_self)
             print(submission.ups)
-            f = open(r"C:\Users\Akschansh Rai\Desktop\python praw practice\textfiles\{}.txt".format(submission.title[0:20]),"x")
+            f = open('./textfiles/{}.txt'.format(submission.title[0:20]),"x")
             f.write("{}\n{}".format(submission.title, submission.selftext))
             print(submission.permalink)
 

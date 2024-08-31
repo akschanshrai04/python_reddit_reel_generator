@@ -3,19 +3,19 @@ from selenium import webdriver
 from loginfunc import openLogin
 from mainvideofunc import createVideo
 
-username = "bot_username"
-password = "bot_password"
+username = "reddit_username"
+password = "reddit_password"
 
 driver = webdriver.Chrome()
 
 openLogin(driver, password, username)
 
 reddit = praw.Reddit(
-    client_id="T8E4zePolqmX00d4jTEN0A",
-    client_secret="C4UDTaG5J4iK-1POcRWogUC_fvY-Fg",
-    password="teo123meansgood",
-    user_agent="auto_insta_bot",
-    username="reddit_bot_masti",
+    client_id="bot_clientid",
+    client_secret="bot_clientSecret",
+    password="reddit_pass",
+    user_agent="bot_name",
+    username="reddit_usename",
 )
 
 print("Login successful")
@@ -39,4 +39,5 @@ for i in range(n):
     listsub.append(a)
 
 for sub in listsub:
+
     createVideo(reddit, driver, sub, bgcount)

@@ -1,0 +1,2 @@
+add your background video(16:9)(1920x1080) background video here numbered from 1 to so on and change bgcount variable also inside the code to the number of background videos
+(add bg videos of around 20mins length)

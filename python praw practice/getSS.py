@@ -7,5 +7,5 @@ def getSSfunc(driver, submission):
     driver.get(url)
     titlepic = driver.find_element(By.XPATH, "/html/body/shreddit-app/div/div[1]/div/main/shreddit-post/h1")
     titleauthor = driver.find_element(By.XPATH,"/html/body/shreddit-app/div/div[1]/div/main/shreddit-post/div[1]")
-    titlepic.screenshot(r'C:\Users\Akschansh Rai\Desktop\python praw practice\screenshots\title_{s}.png'.format(s=submission.title[0:10]))
-    titleauthor.screenshot(r'C:\Users\Akschansh Rai\Desktop\python praw practice\screenshots\author_{s}.png'.format(s=submission.title[0:10]))
+    titlepic.screenshot('./screenshots/title_{s}.png'.format(s=submission.title[0:10]))
+    titleauthor.screenshot('./screenshots/author_{s}.png'.format(s=submission.title[0:10]))
